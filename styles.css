@@ -1,0 +1,288 @@
+/* Configurações Gerais */
+* {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+
+
+body {
+    font-family: sans-serif;
+    background-image: linear-gradient(to top,#333333, rgb(0, 0, 0));
+}
+/**/
+
+/* Barra de navegação */
+#barra-de-navegacao {
+    display: flex;
+    width: 100%;
+    height: 140px;
+    background-color: #3b393a;
+    margin: 0px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#logo {
+    position: absolute;
+    left: 60px;
+    height: 140px;
+    width: 300px;
+    text-decoration: none;
+    color: white;
+    border-radius: 50px;
+}
+
+
+#lista-opcoes-nav {
+    display: flex;
+    list-style: none;
+}
+
+.opcoes-nav a{
+    padding: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.opcoes-nav a:hover {
+    color: gold;
+}
+
+/**/
+
+/* Rodapé */
+
+.rodape {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 180px;
+    background-color: #545052;
+}
+
+.rodape span {
+    font-size: 20px;
+    
+}
+
+
+/** Conteúdo */
+
+h1 {
+    text-align: center;
+    margin: 30px;
+    font-size: 42px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+}
+
+hr {
+    border-width: 2px;
+    margin: 20px;
+}
+
+/* Começo dos cartazes */
+
+#principal {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.div-cartaz-filme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 750px;
+    margin: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 0px 4px 10px black;
+    transition: 0.5s width, 0.5s height, 1s background-color;
+}
+
+.div-cartaz-filme:hover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 430px;
+    height: 780px;
+    margin: 40px;
+    padding: 10px;
+    box-shadow: 5px 0px 4px 10px black;
+    background-color: #333333;
+
+}
+
+.cartaz-filme {
+    width: 330px;
+    height: 500px;
+    margin: 10px;
+
+}
+
+.div-cartaz-filme h2 {
+    text-align: center;
+    font-size: 32px;
+    margin: 5px;
+}
+
+.div-cartaz-filme p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.div-cartaz-filme a {
+    margin: 30px;
+    font-weight: bold;
+}
+
+.div-cartaz-filme a:hover {
+    color:gold
+}
+
+/* Fim dos cartazes */
+
+/* ---------------------------------------------------- */
+
+/* Arquivo Filmes */
+
+#principal-filme {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+#lados-filme{
+    width: 50%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#lados-filme h1 {
+    margin: 10px
+}
+
+/* Lado esquerdo */
+
+#cartaz-apresentacao {
+    width: 45%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border: 5px solid #3b393a;
+    border-radius: 20px;
+}
+
+#sinopse-filme {
+    margin: 10px 70px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/**/
+
+/* Lado Direito */
+
+.contorno {
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.opcoes-dias {
+    border: 2px solid white;
+    display: flex;
+    height: 60px;
+    width: 600px;
+    justify-content: center;
+    background-color: grey;
+    border-radius: 30px;
+}
+
+.opcoes-dias a {
+    float:left;
+    margin: 0 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 60px;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+    border-radius: 30px;
+    padding: 0 10px;
+}
+
+.opcoes-dias a:hover {
+    background-color: gold;
+    color: white;
+}
+
+.horas-disponiveis {
+    display: flex;
+    height: 70px;
+    width: 600px;
+    margin: 10px 5px;
+    justify-content: center;
+}
+
+.botao-horas {
+    width: 100px;
+    background-color: grey;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px black;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid white;
+}
+
+.botao-horas:hover {
+    background-color: gold;
+    color: white;
+}
+
+#quantidade-ingressos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+#quantidade-ingressos input {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+    color: black;
+}
+
+.confirmar {
+    margin: 20px;
+    width: 500px;
+    height: 50px;
+    font-size: 30px;
+    background-color: #28a745;
+    border-radius: 30px;
+}
+
+.confirmar:hover {
+    background-color: #006400;
+}
+/**/

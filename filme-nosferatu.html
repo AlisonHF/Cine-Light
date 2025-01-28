@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css" >
+        <title>Filme exemplo</title>
+    </head>
+
+    <body>
+        <!-- Barra de navegação -->
+        <header>
+            <nav id="barra-de-navegacao">
+                <img id="logo" src="assets/logo.jpg"></img>
+
+                <ul id="lista-opcoes-nav">
+                    <li class="opcoes-nav">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="opcoes-nav">
+                        <a href="">Filmes</a>
+                    </li>
+                    <li class="opcoes-nav">
+                        <a href="">Cinemas</a>
+                    </li>
+                    <li class="opcoes-nav">
+                        <a href="">Sobre</a>
+                    </li>
+                    <li class="opcoes-nav">
+                        <a href="">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="principal-filme">
+
+            <div id="lados-filme" class="contorno" style="padding: 10px;">
+                    <img id="cartaz-apresentacao" src="assets/nosferatu.jpeg">
+                    <h1>Nosferatu</h1>
+                    <p id="sinopse-filme">
+                        Em mais uma adaptação do clássico Nosferatu, filme mudo de 1922, seguimos o vampiro
+                        Conde Orlok - Inspirado em Drácula - que quer comprar uma casa na Alemanha, mas acaba
+                        se apaixonando pela esposa do corretor de imóveis.
+                    </p>
+
+            </div>
+
+            <div id="lados-filme" style= "margin-top: 100px;">
+
+
+                <div class="contorno">
+                    <h2>Selecione o dia e a hora</h2>
+                    <div class="opcoes-dias">
+                        <a href="">26 / 01 </a>
+                        <a href="">27 / 01 </a>
+                        <a href="">28 / 01 </a>
+                        <a href="">29 / 01 </a>
+                    </div>
+
+                    <div class="horas-disponiveis">
+                        <button class="botao-horas">14:00</button>
+                        <button class="botao-horas">17:00</button>
+                        <button class="botao-horas">19:00</button>
+                        <button class="botao-horas">20:00</button>
+                        <button class="botao-horas">22:00</button>
+                    </div>
+                </div>
+
+                <div id="quantidade-ingressos" class="contorno">
+                    <h3>Digite a quantidade de ingressos:</h3>
+                    <input type="number" value="0">
+                </div>
+
+                <button class="confirmar">Confirmar</button>
+
+            </div>
+        </div>
+
+        <footer class="rodape">
+            <span>Cine Light &copy Todos os direitos reservados</span>
+        </footer>
+
+        
+
+    </body>
+</html>
