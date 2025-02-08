@@ -5,76 +5,118 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css" >
-        <title>Filme exemplo</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="font-awesome/css/all.css">
+        <title>Página inicial</title>
+
     </head>
 
     <body>
-        <!-- Barra de navegação -->
         <header>
-            <nav id="barra-de-navegacao">
-                <img id="logo" src="assets/logo.jpg"></img>
-
-                <ul id="lista-opcoes-nav">
-                    <li class="opcoes-nav">
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li class="opcoes-nav">
-                        <a href="">Filmes</a>
-                    </li>
-                    <li class="opcoes-nav">
-                        <a href="">Cinemas</a>
-                    </li>
-                    <li class="opcoes-nav">
-                        <a href="">Sobre</a>
-                    </li>
-                    <li class="opcoes-nav">
-                        <a href="">Contato</a>
-                    </li>
-                </ul>
+            <!-- Barra de navegação -->
+            <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3b393a;">
+                <!-- Logo -->
+                <div class="navbar-brand" id="logo" alt="logo">
+                    <span>Cine
+                    <i class="fa-solid fa-clapperboard"></i>
+                    Light</span>
+                </div>
+            
+                <!-- Botão menu -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navegacao" aria-controls="navegacao" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <!-- Links de navegação -->
+                <div class="collapse navbar-collapse" id="navegacao" style="background-color: #3b393a;">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Filmes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Cinemas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Contato</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </header>
 
-        <div id="principal-filme">
+        <div id="principal-filme" class="container-lg">
 
-            <div id="lados-filme" class="contorno" style="padding: 10px;">
-                    <img id="cartaz-apresentacao" src="assets/nosferatu.jpeg">
-                    <h1>Nosferatu</h1>
+            <div class="d-md-flex">
+                <div id="cartao" class="card bg-light">
+                    <img class="card-img-top" src="assets/nosferatu.jpeg">
+                    <div class="card-body">
+                        <h1 class="card-title">Nosferatu</h1>
+                        <p class="card-text">Lançado em: 2025</p>
+                        <p class="card-text">Dirigido por: Pessoa</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h1 id="titulo-filme">Nosferatu</h1>
                     <p id="sinopse-filme">
-                        Em mais uma adaptação do clássico Nosferatu, filme mudo de 1922, seguimos o vampiro
-                        Conde Orlok - Inspirado em Drácula - que quer comprar uma casa na Alemanha, mas acaba
-                        se apaixonando pela esposa do corretor de imóveis.
+                        Uma nova adaptação do clássico do terror, Nosferatu é um conto gótico sobre a obsessão de um terrível 
+                        vampiro por uma mulher assombrada. A história se passa nos anos de 1800 na Alemanha e acompanha o rico
+                         e misterioso Conde Orlok (Bill Skarsgård) na busca por um novo lar. O vendedor de imóveis Thomas Hutter
+                          (Nicholas Hoult) fica responsável por conduzir os negócios de Orlok e, então, viaja para as montanhas
+                           da Transilvânia para prosseguir com as burocracias da nova propriedade do nobre. O que Thomas não
+                            esperava era encontrar o mal encarnado. Todos ao seu redor lhe indicam abandonar suas viagens, 
+                            enquanto, longe dali, Ellen (Lily-Rose Depp) é continuamente perturbada por sonhos assustadores
+                             que se conectam com o suposto homem que Thomas encontrará e que vive sozinho num castelo em ruínas
+                              nos Cárpatos. A estranha relação entre Ellen e a criatura a fará sucumbir a algo sombrio e tenebroso?
                     </p>
 
-            </div>
+                    <div class="contorno">
+                        <h3 class="mb-2">Selecione o dia e a hora</h3>
+                        <div class="btn-group bg-dark grupo-botoes" role="group">
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                            <label class="btn btn-outline-light botao-dia" for="btnradio1">25/01</label>
 
-            <div id="lados-filme" style= "margin-top: 100px;">
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                            <label class="btn btn-outline-light botao-dia" for="btnradio2">26/01</label>
 
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                            <label class="btn btn-outline-light botao-dia" for="btnradio3">27/01</label>
 
-                <div class="contorno">
-                    <h2>Selecione o dia e a hora</h2>
-                    <div class="opcoes-dias">
-                        <a href="">26 / 01 </a>
-                        <a href="">27 / 01 </a>
-                        <a href="">28 / 01 </a>
-                        <a href="">29 / 01 </a>
-                    </div>
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                            <label class="btn btn-outline-light botao-dia" for="btnradio4">28/01</label>
 
-                    <div class="horas-disponiveis">
-                        <button class="botao-horas">14:00</button>
-                        <button class="botao-horas">17:00</button>
-                        <button class="botao-horas">19:00</button>
-                        <button class="botao-horas">20:00</button>
-                        <button class="botao-horas">22:00</button>
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
+                            <label class="btn btn-outline-light botao-dia" for="btnradio5">29/01</label>
+                        </div>
+
+                        <div class="btn-group  grupo-botoes" role="group" style="margin-top: 10px; margin-bottom: 3px;">
+                            <input type="radio" class="btn-check" name="hora" id="btnradiohora1" autocomplete="off" checked>
+                            <label class="btn btn-outline-light botao-dia" for="btnradiohora1">14:00</label>
+
+                            <input type="radio" class="btn-check" name="hora" id="btnradiohora2" autocomplete="off" >
+                            <label class="btn btn-outline-light botao-dia" for="btnradiohora2">16:00</label>
+
+                            <input type="radio" class="btn-check" name="hora" id="btnradiohora3" autocomplete="off" >
+                            <label class="btn btn-outline-light botao-dia" for="btnradiohora3">18:00</label>
+
+                            <input type="radio" class="btn-check" name="hora" id="btnradiohora4" autocomplete="off" >
+                            <label class="btn btn-outline-light botao-dia" for="btnradiohora4">20:00</label>
+
+                            <input type="radio" class="btn-check" name="hora" id="btnradiohora5" autocomplete="off" >
+                            <label class="btn btn-outline-light botao-dia" for="btnradiohora5">22:00</label>
+                        </div>
+
+                        <h3 class="mt-3">Selecione a quantidade de ingressos</h3>
+                        <input type="number" value="0" class="form-control" style="width: 200px;">
+                        <button class="btn btn-success mt-3">Confirmar</button>
                     </div>
                 </div>
-
-                <div id="quantidade-ingressos" class="contorno">
-                    <h3>Digite a quantidade de ingressos:</h3>
-                    <input type="number" value="0">
-                </div>
-
-                <button class="confirmar">Confirmar</button>
-
             </div>
         </div>
 
@@ -82,7 +124,9 @@
             <span>Cine Light &copy Todos os direitos reservados</span>
         </footer>
 
-        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
 
     </body>
 </html>

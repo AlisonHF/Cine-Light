@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css" >
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="font-awesome/css/all.css">
+        <title>Página inicial</title>
+
+    </head>
+
+    <body>
+        <header>
+            <!-- Barra de navegação -->
+            <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3b393a;">
+                <!-- Logo -->
+                <div class="navbar-brand" id="logo" alt="logo">
+                    <span>Cine
+                    <i class="fa-solid fa-clapperboard"></i>
+                    Light</span>
+                </div>
+            
+                <!-- Botão menu -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navegacao" aria-controls="navegacao" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <!-- Links de navegação -->
+                <div class="collapse navbar-collapse" id="navegacao" style="background-color: #3b393a;">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Filmes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Cinemas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div id="principal-filme" class="container-lg">
+
+            <div class="d-md-flex">
+                <div id="cartao" class="card bg-light">
+                    <img class="card-img-top" src="assets/chicobento.jpg">
+                    <div class="card-body">
+                        <h1 class="card-title">Chico Bento e a Goiabeira Maraviósa </h1>
+                        <p class="card-text">Lançado em: 2025</p>
+                        <p class="card-text">Dirigido por: Pessoa</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h1 id="titulo-filme">Sonic 3</h1>
+                    <p id="sinopse-filme">
+                        Um dos personagens mais queridos do universo de A Turma da Mônica irá enfrentar um grande desafio em Chico 
+                        Bento e a Goiabeira Maraviósa. Chico Bento acorda para mais um dia na Vila Abobrinha focado em conseguir
+                         subir em sua amada goiabeira para pegar a fruta sem o dono das terras saber. O que Chico não esperava era
+                          que sua preciosa árvore estaria ameaçada pela construção de uma estrada na região, já que, para desenhar
+                           a rodovia, será preciso pavimentá-la pela propriedade de Nhô Lau, exatamente onde a goiabeira está 
+                           plantada. Focado em salvar a árvore, Chico Bento reúne seus amigos Zé Lelé, Rosinha, Zé da Roça,
+                            Tábata, Hiro e toda a comunidade para acabar com o projeto da família de Genezinho e Dotô Agripino.
+                             Com a turminha se metendo em diversas confusões, Chico Bento e a Goiabeira Maraviósa traz uma
+                              aventura que irá tirar o sossego e a tranquilidade da Vila Abobrinha.
+
+                    </p>
+
+                    <div class="contorno">
+                        <h3 class="mb-2">Selecione o dia e a hora</h3>
+                        <div class="btn-group bg-dark grupo-botoes" role="group">
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                            <label class="btn btn-outline-light botao-dia" for="btnradio1">25/01</label>
+
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                            <label class="btn btn-outline-light botao-dia" for="btnradio2">26/01</label>
+
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                            <label class="btn btn-outline-light botao-dia" for="btnradio3">27/01</label>
+
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                            <label class="btn btn-outline-light botao-dia" for="btnradio4">28/01</label>
+
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
+                            <label class="btn btn-outline-light botao-dia" for="btnradio5">29/01</label>
+                        </div>
+
+                        <div class="btn-group  grupo-botoes" role="group" style="margin-top: 10px; margin-bottom: 3px;">
+                            <input type="radio" class="btn-check" name="hora" id="btnradiohora1" autocomplete="off" checked>
+                            <label class="btn btn-outline-light botao-dia" for="btnradiohora1">14:00</label>
+
+                            <input type="radio" class="btn-check" name="hora" id="btnradiohora2" autocomplete="off" >
+                            <label class="btn btn-outline-light botao-dia" for="btnradiohora2">16:00</label>
+
+                            <input type="radio" class="btn-check" name="hora" id="btnradiohora3" autocomplete="off" >
+                            <label class="btn btn-outline-light botao-dia" for="btnradiohora3">18:00</label>
+
+                            <input type="radio" class="btn-check" name="hora" id="btnradiohora4" autocomplete="off" >
+                            <label class="btn btn-outline-light botao-dia" for="btnradiohora4">20:00</label>
+
+                            <input type="radio" class="btn-check" name="hora" id="btnradiohora5" autocomplete="off" >
+                            <label class="btn btn-outline-light botao-dia" for="btnradiohora5">22:00</label>
+                        </div>
+
+                        <h3 class="mt-3">Selecione a quantidade de ingressos</h3>
+                        <input type="number" value="0" class="form-control" style="width: 200px;">
+                        <button class="btn btn-success mt-3">Confirmar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="rodape">
+            <span>Cine Light &copy Todos os direitos reservados</span>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+    </body>
+</html>

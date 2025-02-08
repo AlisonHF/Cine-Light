@@ -5,117 +5,168 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css" >
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="font-awesome/css/all.css">
         <title>Página inicial</title>
     </head>
 
     <body>
 
-        <!-- Barra de navegação -->
         <header>
-            <nav id="barra-de-navegacao">
-
-
-                <img id="logo" src="assets/logo.jpg"></img>
-
-                <ul id="lista-opcoes-nav">
-                    <li class="opcoes-nav">
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li class="opcoes-nav">
-                        <a href="">Filmes</a>
-                    </li>
-                    <li class="opcoes-nav">
-                        <a href="">Cinemas</a>
-                    </li>
-                    <li class="opcoes-nav">
-                        <a href="">Sobre</a>
-                    </li>
-                    <li class="opcoes-nav">
-                        <a href="">Contato</a>
-                    </li>
-                </ul>
-
+            <!-- Barra de navegação -->
+            <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3b393a;">
+                <!-- Logo -->
+                <div class="navbar-brand" id="logo" alt="logo">
+                    <span>Cine
+                    <i class="fa-solid fa-clapperboard"></i>
+                    Light</span>
+                </div>
+            
+                <!-- Botão menu -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navegacao" aria-controls="navegacao" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <!-- Links de navegação -->
+                <div class="collapse navbar-collapse" id="navegacao" style="background-color: #3b393a;">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Filmes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="produtos.html">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Contato</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </header>
-
-
-        <h1>Bem vindo ao maior cinema de Limeira!</h1>
-
+        
         <!-- Fim da barra de navegação -->
 
+        <h1 id="saudacao">Bem vindo ao maior cinema de Limeira!</h1>
+
+        <!-- Carousel -->
+
+        <div id="carousel-cartazes" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-cartazes" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide1"></button>
+                <button type="button" data-bs-target="#carousel-cartazes" data-bs-slide-to="1" aria-label="Slide2"></button>
+                <button type="button" data-bs-target="#carousel-cartazes" data-bs-slide-to="2" aria-label="Slide3"></button>
+                <button type="button" data-bs-target="#carousel-cartazes" data-bs-slide-to="3" aria-label="Slide4"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/Slide/chicobento.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/Slide/covil.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/Slide/conclave.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/Slide/capitao.jpg" alt="">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-cartazes" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button> 
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-cartazes" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button> 
+        </div>
+
         <!-- Começo dos cartazes de filmes -->
-        <h2>Filmes em cartaz</h2>
+        <h2 class="h2-pg-index">Filmes em cartaz</h2>
 
 
+        <main>
+            <div id="div-principal-index" class="container-fluid">
 
-        <div id="principal">
+                <div class="div-cartaz-filme">
+                    <img class="cartaz-filme" src="assets/interestelar.jpeg"/>
+                    <h2>Interestelar</h2>
+                    <a href="filme-interestelar.html">Compre seu ingresso aqui</a>
+                </div>
 
-            <div class="div-cartaz-filme">
-                <img class="cartaz-filme" src="assets/interestelar.jpeg"/>
-                <h2>Interestelar</h2>
-                <p>Baseado em uma teoria científica desenvolvida pelo físico do Caltech Kip Thorne.
-                        Um grupo de exploradores viaja por um buraco de minhoca
-                        e entra em outra dimensão.</p>
-                <a href="filme-interestelar.html">Compre seu ingresso aqui</a>
+                <div class="div-cartaz-filme">
+                    <img class="cartaz-filme" src="assets/nosferatu.jpeg"/>
+                    <h2>Nosferatu</h2>
+
+                    <a href="filme-nosferatu.html">Compre seu ingresso aqui</a>
+                </div>
+
+                <div class="div-cartaz-filme">
+                    <img class="cartaz-filme" src="assets/sonic3.jpeg"/>
+                    <h2>Sonic 3</h2>
+                    <a href="filme-sonic.html">Compre seu ingresso aqui</a>
+                </div>
+
+                <div class="div-cartaz-filme">
+                    <img class="cartaz-filme" src="assets/chicobento.jpg"/>
+                    <h2>Chico Bento e a Goiabeira Misteriosa</h2>
+                    <a href="filme-chicobento.html">Compre seu ingresso aqui</a>
+                </div>
+
+                <div class="div-cartaz-filme">
+                    <img class="cartaz-filme" src="assets/conclave.jpg"/>
+                    <h2>Conclave</h2>
+                    <a href="filme-conclave.html">Compre seu ingresso aqui</a>
+                </div>
+
+                <div class="div-cartaz-filme">
+                    <img class="cartaz-filme" src="assets/covil.jpg"/>
+                    <h2>Covil de Ladrões 2</h2>
+                    <a href="filme-covil.html">Compre seu ingresso aqui</a>
+                </div>
+
+        </main>
+
+        <div class="container-sm div-localizacao">
+
+            <div class="conteudo-localizacao">
+
+                <h2 class= "h2-pg-index" style="margin-top:0px; margin-bottom: 20px">Venha nos visitar!</h2>
+
+                
+                <p>📍 Endereço: Rua Exemplo, 123 - Centro, Limeira, SP</p>
+                <p>🕒 Horário de funcionamento: Segunda a Domingo, das 14h às 23h</p>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14737.56507066343!2d-47.40110202995927!3d-22.564464961432307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1738621087319!5m2!1spt-BR!2sbr"
+                width="100%" height="500" style="border:0; margin: 10px 0px; max-width: 900px;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <button class="btn btn-warning" type="button">
+                    <a href="https://www.google.com/maps/@-22.564306,-47.400831,14z?hl=pt-BR&entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D"
+                    style="text-decoration: none; color:black;">Ver no Google Maps</a>
+                </button>
             </div>
 
-            <div class="div-cartaz-filme">
-                <img class="cartaz-filme" src="assets/nosferatu.jpeg"/>
-                <h2>Nosferatu</h2>
-                <p>
-                    Em mais uma adaptação do clássico Nosferatu, filme mudo de 1922, seguimos o vampiro
-                        Conde Orlok - Inspirado em Drácula - que quer comprar uma casa na Alemanha, mas acaba
-                        se apaixonando pela esposa do corretor de imóveis.
-                </p>
-                <a href="filme-nosferatu.html">Compre seu ingresso aqui</a>
-            </div>
-
-            <div class="div-cartaz-filme">
-                <img class="cartaz-filme" src="assets/sonic3.jpeg"/>
-                <h2>Sonic 3</h2>
-                <p>
-                        Nosso ouriço favorito está de volta no maior filme
-                        da franquia até agora, oficialmente se unindo aos amados personagens Knuckles, Tails
-                        e enfrentando um novo rival, também adorado pelos fãs: Shadow!
-                </p>
-                <a href="">Compre seu ingresso aqui</a>
-            </div>
-
-            <div class="div-cartaz-filme">
-                <img class="cartaz-filme" src="assets/chicobento.jpg"/>
-                <h2>Chico Bento e a Goiabeira Misteriosa</h2>
-                <p>
-                    Chico Bento precisa unir toda sua turma para "sarvá" a goiabeira do Nhô Lau.
-                </p>
-                <a href="">Compre seu ingresso aqui</a>
-            </div>
-
-            <div class="div-cartaz-filme">
-                <img class="cartaz-filme" src="assets/lobisomem.jpg"/>
-                <h2>Lobisomem</h2>
-                <p>
-                    Neste arrebatador conto de horror, um homem deve lutar para proteger a
-                        si mesmo e sua família quando eles se tornam alvos de um lobisomem morta
-                </p>
-                <a href="">Compre seu ingresso aqui</a>
-            </div>
-
-            <div class="div-cartaz-filme">
-                <img class="cartaz-filme" src="assets/mma.jpg"/>
-                <h2>MMA - Meu Melhor Amigo</h2>
-                <p>
-                    Max, um grande campeão de MMA que está enfrentando o fim de sua carreira, está afastado do ringue
-                        enquanto se recupera de uma lesão séria no ombro. Quando descobre ser pai de um menino autista 
-                        de 8 anos.
-                </p>
-                <a href="">Compre seu ingresso aqui</a>
-            </div>
+        </div>
 
             <footer class="rodape">
                 <span>Cine Light &copy Todos os direitos reservados</span>
             </footer>
             
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+            <script src="js/bootstrap.min.js"></script>
+            
     </body>
 
 </html>
-
