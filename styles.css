@@ -182,6 +182,7 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
+    height: 700px;
 }
 
 #cartao {
@@ -282,4 +283,14 @@ body {
 .imagem {
     width: 100%;
     height: 600px;
+}
+
+/* Produtos */
+
+.card-prod {
+    width: 250px;
+}
+
+.img-prod {
+    height: 280px;
 }
